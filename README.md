@@ -1,4 +1,3 @@
-/edit/master
 模仿美图秀秀图片处理
 =================
 从三个方面对图片进行处理： 
@@ -26,4 +25,6 @@ ColorMatrix imageMatrix = new ColorMatrix();
         imageMatrix.postConcat(lumMatrix);
         
 #[效果图1](https://github.com/suhuMM/ImageMatrix/edit/master/image/image_1.png)
+--
 #[效果图2](https://github.com/suhuMM/ImageMatrix/edit/master/image/image_2.png)
+--
