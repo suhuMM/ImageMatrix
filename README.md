@@ -17,6 +17,7 @@ ColorMatrix saturationMatrix = new ColorMatrix();
 ColorMatrix lumMatrix = new ColorMatrix();
 --------------------------------------------
         lumMatrix.setScale(vLum, vLum, vLum, 1);
+        
 混合效果：
 ColorMatrix imageMatrix = new ColorMatrix();
 --------------------------------------------
