@@ -24,6 +24,6 @@ ColorMatrix imageMatrix = new ColorMatrix();
         imageMatrix.postConcat(hueMatrix);
         imageMatrix.postConcat(saturationMatrix);
         imageMatrix.postConcat(lumMatrix);
+        
 #[效果图1](https://github.com/suhuMM/ImageMatrix/edit/master/image/image_1.png)
---------------------------------------------
 #[效果图2](https://github.com/suhuMM/ImageMatrix/edit/master/image/image_2.png)
