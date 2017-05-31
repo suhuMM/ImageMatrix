@@ -32,4 +32,9 @@ ColorMatrix imageMatrix = new ColorMatrix();
 
 
 
-推荐一个封装比较好的工具类：https://github.com/Blankj/AndroidUtilCode
+推荐一个封装比较好的工具类：
+
+博客：http://rance935.com/blog/?p=152
+
+GitHub：https://github.com/Blankj/AndroidUtilCode
+
