@@ -28,3 +28,8 @@ ColorMatrix imageMatrix = new ColorMatrix();
 --
 #[效果图2](https://github.com/suhuMM/ImageMatrix/edit/master/image/image_2.png)
 --
+
+
+
+
+推荐一个封装比较好的工具类：https://github.com/Blankj/AndroidUtilCode
