@@ -6,4 +6,95 @@
     android:layout_height="match_parent"
     tools:context="com.example.suhu.imagematrix.ColorActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/girl"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:text="灰度效果"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="图像反转"
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        android:text="怀旧照片"
+        app:layout_constraintLeft_toLeftOf="@+id/button4"
+        app:layout_constraintRight_toRightOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="23dp"
+        android:text="去色效果"
+        app:layout_constraintBottom_toTopOf="@+id/button14"
+        app:layout_constraintLeft_toLeftOf="@+id/button5"
+        app:layout_constraintRight_toRightOf="@+id/button5"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="23dp"
+        android:text="高饱和度"
+        app:layout_constraintLeft_toLeftOf="@+id/button6"
+        app:layout_constraintRight_toRightOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="原图"
+        app:layout_constraintBottom_toBottomOf="@+id/button13"
+        app:layout_constraintLeft_toLeftOf="@+id/button12"
+        app:layout_constraintRight_toRightOf="@+id/button12"
+        app:layout_constraintTop_toTopOf="@+id/button13"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 </android.support.constraint.ConstraintLayout>

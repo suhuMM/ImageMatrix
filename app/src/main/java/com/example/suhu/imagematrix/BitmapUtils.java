@@ -336,4 +336,31 @@ public class BitmapUtils {
         return bitmap;
     }
 
+
+    /**
+     *@method 使用颜色矩阵处理效果
+     *@author suhu
+     *@time 2017/6/7 13:37
+     *@param bm
+     *@param matrix
+     *
+     *
+    */
+    public static Bitmap matrixManageBitmap(Bitmap bm,float[] matrix){
+        int width = bm.getWidth();
+        int height = bm.getHeight();
+        Bitmap bmp = Bitmap.createBitmap(width,height, Bitmap.Config.ARGB_8888);
+        ColorMatrix colorMatrix = new ColorMatrix();
+        colorMatrix.set(matrix);
+        Canvas canvas = new Canvas(bmp);
+        Paint paint = new Paint();
+        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        canvas.drawBitmap(bm,0,0,paint);
+        canvas.save();
+        return bmp;
+    }
+
+
+
+
 }
