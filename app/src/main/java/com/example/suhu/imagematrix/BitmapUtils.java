@@ -361,6 +361,4 @@ public class BitmapUtils {
     }
 
 
-
-
 }
