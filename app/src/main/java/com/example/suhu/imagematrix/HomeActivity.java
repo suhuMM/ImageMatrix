@@ -27,6 +27,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(this, PixelActivity.class));
                 break;
             case R.id.button3:
+                startActivity(new Intent(this, ColorActivity.class));
                 break;
         }
     }
