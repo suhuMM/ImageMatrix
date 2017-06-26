@@ -17,7 +17,7 @@ public class HomeActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button, R.id.button2, R.id.button3})
+    @OnClick({R.id.button, R.id.button2, R.id.button3,R.id.button4})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button:
@@ -28,6 +28,9 @@ public class HomeActivity extends AppCompatActivity {
                 break;
             case R.id.button3:
                 startActivity(new Intent(this, ColorActivity.class));
+                break;
+            case R.id.button4:
+                startActivity(new Intent(this, AnimationActivity.class));
                 break;
         }
     }

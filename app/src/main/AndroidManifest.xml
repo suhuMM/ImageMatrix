@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".PixelActivity" />
-        <activity android:name=".ColorActivity"></activity>
+        <activity android:name=".ColorActivity" />
+        <activity android:name=".AnimationActivity"></activity>
     </application>
 
 </manifest>

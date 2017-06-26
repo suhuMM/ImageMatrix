@@ -361,5 +361,40 @@ public class BitmapUtils {
     }
 
 
+    public static void animationBitmap(Bitmap bm,Canvas canvas){
+        int width = bm.getWidth();
+        int height = bm.getHeight();
+        int widthNumber = 20;
+        int heightNumber = 10;
+        //等差数列：d=Sn/n(n-1)
+        float xSpacing = (width*1.0F)/(widthNumber/2*(widthNumber/2-1));
+        float ySpacing = (height*1.0F)/(heightNumber/2*(heightNumber/2-1));
+
+
+        float change [] = new float[widthNumber*heightNumber*2];
+        for (int i = 0; i < change.length; i++) {
+            float value;
+            //奇偶点区分xy
+            if ((i+1)%2==0){
+                //x坐标：奇数
+                //区分左边和右边
+                if (i%(widthNumber*2)<=widthNumber){
+                    //递增
+                    value = i%(widthNumber*2)/2*xSpacing;
+                }else {
+                    //递减
+                    value = widthNumber/2*xSpacing-(i%(widthNumber*2)-widthNumber)/2*xSpacing;
+                }
+            }else {
+                //y坐标：偶数
+                value = i/2*ySpacing;
+            }
+            change[i] = value;
+        }
+        canvas.drawBitmapMesh(bm,width-1,height-1,change,0,null,0,null);
+    }
+
+
+
 
 }
